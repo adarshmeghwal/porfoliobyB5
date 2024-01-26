@@ -1,0 +1,172 @@
+.scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+.Projects .card,
+.Blogs .card {
+    transition: transform 0.3s ease-in-out;
+    overflow: hidden;
+}
+
+.Projects .card:hover,
+.Blogs .card:hover {
+    transform: scale(0.9);
+    z-index: 1;
+}
+
+.footer a:hover {
+    text-decoration: none;
+}
+
+.email:hover i:before {
+    color: #b3f199;
+    box-shadow: 0 0 15px #b3f199;
+}
+
+.github:hover i:before {
+    color: #ffee10;
+    box-shadow: 0 0 15px #ffee10;
+}
+
+.linkedin:hover i:before {
+    color: #6bb5ee;
+    box-shadow: 0 0 15px #6bb5ee;
+}
+
+.Technology img {
+    position: relative;
+    background: white;
+    border-radius: 75px;
+    transition: 1s box-shadow;
+}
+
+.Technology img:hover {
+    box-shadow: 0 5px 35px 0px rgba(0, 0, 0, .1);
+}
+
+.Technology img:hover::before,
+.Technology img:hover::after {
+    display: block;
+    content: '';
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    background: #FDA8CF;
+    border-radius: 75px;
+    z-index: -1;
+    animation: 1s clockwise infinite;
+}
+
+.Technology img:hover:after {
+    background: #F3CE5E;
+    animation: 2s counterclockwise infinite;
+}
+
+@keyframes clockwise {
+    0% {
+        top: -5px;
+        left: 0;
+    }
+
+    12% {
+        top: -2px;
+        left: 2px;
+    }
+
+    25% {
+        top: 0;
+        left: 5px;
+    }
+
+    37% {
+        top: 2px;
+        left: 2px;
+    }
+
+    50% {
+        top: 5px;
+        left: 0;
+    }
+
+    62% {
+        top: 2px;
+        left: -2px;
+    }
+
+    75% {
+        top: 0;
+        left: -5px;
+    }
+
+    87% {
+        top: -2px;
+        left: -2px;
+    }
+
+    100% {
+        top: -5px;
+        left: 0;
+    }
+}
+
+@keyframes counterclockwise {
+    0% {
+        top: -5px;
+        right: 0;
+    }
+
+    12% {
+        top: -2px;
+        right: 2px;
+    }
+
+    25% {
+        top: 0;
+        right: 5px;
+    }
+
+    37% {
+        top: 2px;
+        right: 2px;
+    }
+
+    50% {
+        top: 5px;
+        right: 0;
+    }
+
+    62% {
+        top: 2px;
+        right: -2px;
+    }
+
+    75% {
+        top: 0;
+        right: -5px;
+    }
+
+    87% {
+        top: -2px;
+        right: -2px;
+    }
+
+    100% {
+        top: -5px;
+        right: 0;
+    }
+}
+h1 .text-info{
+    animation: text-shadow-pop-top 1s infinite;
+}
+@keyframes text-shadow-pop-top {
+    0% {
+      text-shadow: 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555;
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+    }
+    100% {
+      text-shadow: 0 0.5px 0 1px #555555, 0 -1px 0 1px #555555, 0 -1.5px 0 1px #555555, 0 -2px 0 1px #555555;
+      -webkit-transform: translateY(3px);
+              transform: translateY(3px);
+    }
+  }
