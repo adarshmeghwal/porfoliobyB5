@@ -3,16 +3,28 @@
     display: none;
 }
 
-.Projects .card,
-.Blogs .card {
+.Projects .card{
     transition: transform 0.3s ease-in-out;
     overflow: hidden;
 }
 
-.Projects .card:hover,
-.Blogs .card:hover {
+.Projects .card:hover{
     transform: scale(0.9);
     z-index: 1;
+}
+
+.Blogs .card .img-wrapper{
+    overflow: hidden;
+}
+.Blogs .card img{
+    object-fit: cover;
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    transition: transform .5s ease-in-out;
+}
+.Blogs .card:hover img{
+    transform: scale(1.1);
 }
 
 .footer a:hover {
